@@ -20,7 +20,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <h1>Email Submission Form</h1>
 
-    <form action="/submit" id="emailForm" name="emailSubmissionForm" enctype="multipart/form-data">
+    <form action="/submit" id="emailForm" name="emailSubmissionForm">
         <label for="userEmail" id="emailLabel" class="form-label" style="font-weight: bold;">Email Address:</label>
         
         <input 
@@ -61,18 +61,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </button>
     </form>
 
-    <script>
-        // Enable the submit button only when the email field is valid
-        const emailInput = document.getElementById("userEmail");
-        const submitButton = document.getElementById("submitButton");
-        
-        emailInput.addEventListener("input", function() {
-            if (emailInput.validity.valid) {
-                submitButton.disabled = false;
-            } else {
-                submitButton.disabled = true;
-            }
-        });
-    </script>
 </body>
 </html>
